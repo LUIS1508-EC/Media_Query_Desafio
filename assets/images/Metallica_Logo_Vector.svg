@@ -9,7 +9,7 @@
 				<g>
 					<g>
 						<g>
-							<polygon style="fill:#FFFFFF;" points="421.112,924.528 409.007,952.493 402.615,952.493 390.55,924.528 397.541,924.528 
+							<polygon style="fill:yellow;" points="421.112,924.528 409.007,952.493 402.615,952.493 390.55,924.528 397.541,924.528 
 								406.051,944.503 414.68,924.528 							"/>
 						</g>
 						<g>
@@ -182,7 +182,7 @@
 						<rect x="668.546" y="828.478" style="fill:#FFFFFF;" width="3.825" height="2.295"/>
 					</g>
 					<g>
-						<rect x="664.722" y="830.773" style="fill:#FFFFFF;" width="3.825" height="2.295"/>
+						<rect x="664.722" y="830.773" style="fill:yellow;" width="3.825" height="2.295"/>
 					</g>
 					<g>
 						<rect x="668.546" y="833.068" style="fill:#FFFFFF;" width="3.825" height="2.295"/>
