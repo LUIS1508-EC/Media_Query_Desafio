@@ -1,35 +1,37 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Hind', sans-serif;
     background-color: yellow;
 }
 
-.container{
+.container {
     width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60px 80px 1fr 60px;
-    grid-template-areas:    "navegador"
-                            "selector"
-                            "galeria"
-                            "footer";
+    grid-template-areas: "navegador"
+        "selector"
+        "galeria"
+        "footer";
 
 }
 
-.logo, .menu{
+.logo,
+.menu {
     width: 30px;
     fill: yellow;
 }
-.logo3{
+
+.logo3 {
     display: none;
 }
 
-.encabezado{
+.encabezado {
     display: flex;
     justify-content: space-between;
     padding: 15px;
@@ -39,13 +41,13 @@ body{
     grid-area: navegador;
 }
 
-.logo_encabezado{
+.logo_encabezado {
     display: flex;
     gap: 7px;
     align-items: center;
 }
 
-.filtros{
+.filtros {
 
     background-color: darkgray;
     display: flex;
@@ -56,37 +58,39 @@ body{
     grid-area: selector;
 }
 
-.filtros select{
+.filtros select {
     width: 250px;
     height: 50px;
 }
 
-.encabezado ul{
+.encabezado ul {
     display: none;
 }
 
-.opciones{
+.opciones {
     text-align-last: left;
     padding: 10px;
 
-    
+
 }
 
-.container_cards{
+.container_cards {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     padding: 10px;
 }
- .container_cards button{
+
+.container_cards button {
     background-color: black;
     border: solid 1px yellow;
     color: yellow;
     width: 100px;
     height: 50px;
- }
-.cards{
+}
+
+.cards {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,14 +104,14 @@ body{
 }
 
 
-.galeria{
+.galeria {
     display: flex;
     flex-direction: column;
     align-items: center;
     grid-area: galeria;
 }
 
-.galeria img{
+.galeria img {
     width: 200px;
 }
 
@@ -116,7 +120,7 @@ body{
     padding-bottom: 10px;
 }
 
-.botones button{
+.botones button {
     width: 30px;
     height: 30px;
     color: yellow;
@@ -124,7 +128,7 @@ body{
     border: solid 1px yellow;
 }
 
-footer{
+footer {
     background-color: black;
     color: yellow;
     display: flex;
@@ -134,282 +138,220 @@ footer{
     grid-area: footer;
 }
 
-footer img{
+footer img {
     width: 20px;
 }
 
-@media (min-width: 576px){
-body{
-    background-color: black;
+.foot2{
+display: none;
 }
 
+
+@media (min-width: 576px) {
+    body {
+        background-color: black;
+    }
+
     .container {
+        height: 150vh;
         display: grid;
         grid-template-columns: 250px 1fr;
         grid-template-rows: 80px 1fr 100px;
-        grid-template-areas:    "navegador selector"
-                                "navegador galeria"
-                                "footer galeria";
-}
+        grid-template-areas: "navegador selector"
+            "navegador galeria"
+            "footer footer";
+    }
 
-    .encabezado{
+    .encabezado {
         flex-direction: column;
         justify-content: start;
-        color:black;
+        color: black;
         background-color: yellow;
 
     }
 
-    .menu{
+    .menu {
         display: none;
     }
 
-    .container_cards{
+    .container_cards {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         padding-top: 35px;
     }
 
-    .encabezado ul{
+    .encabezado ul {
         display: block;
         font-size: 18px;
         font-weight: 600;
         padding-top: 15px;
         list-style: none;
 
-        
     }
 
-    .encabezado li{
+    .encabezado li {
         padding: 10px;
     }
 
-    .encabezado h1{
+    .encabezado h1 {
         font-size: 26px;
     }
+
     .botones {
         display: flex;
         padding-top: 50px;
     }
 
-    .botones button{
+    .botones button {
         width: 30px;
         height: 30px;
         color: black;
         background-color: yellow;
         border: solid 1px black;
     }
-    .cards{
+
+    .cards {
         background-color: yellow;
         color: black;
     }
-    .cards span{
+
+    .cards span {
         font-weight: 600;
     }
-.footer{
-    background-color: yellow;
-    color:black;
-}
 
-.logo3 {
-    width: 40px;
-    display: block;
-       
-}
-
-
-.filtros{
-    background-color: black;
-    color: yellow;
-}
-
-.filtros span{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-}
-
-@media (min-width:768px){
-    body{
-        background-color: black;
-    }
-    
-        .container {
-            display: grid;
-            grid-template-columns: 250px 1fr;
-            grid-template-rows: 80px 1fr 0;
-            grid-template-areas:    "navegador selector"
-                                    "navegador galeria"
-                                    "footer galeria";
-    }
-    
-        .encabezado{
-            flex-direction: column;
-            justify-content: start;
-            color:black;
-            background-color: yellow;
-    
-        }
-    
-        .menu{
-            display: none;
-        }
-    
-        .container_cards{
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding-top: 35px;
-        }
-    
-        .encabezado ul{
-            display: block;
-            font-size: 18px;
-            font-weight: 600;
-            padding-top: 15px;
-            list-style: none;
-    
-            
-        }
-    
-        .encabezado li{
-            padding: 10px;
-        }
-    
-        .encabezado h1{
-            font-size: 26px;
-        }
-        .botones {
-            display: flex;
-            padding-top: 50px;
-        }
-    
-        .botones button{
-            width: 30px;
-            height: 30px;
-            color: black;
-            background-color: yellow;
-            border: solid 1px black;
-        }
-        .cards{
-            background-color: yellow;
-            color: black;
-        }
-        .cards span{
-            font-weight: 600;
-        }
-    .footer{
+    footer {
+        display: flex;
         background-color: yellow;
-        color:black;
+        color: black;
+        align-items: center;
+        justify-content: center;
+       
     }
+
+    footer span{
+        font-size: 15px;
+    }
+
+    .prueba{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .foot2{
     
+        display: flex;
+        width: 30px;
+             
+    }
+
     .logo3 {
         width: 40px;
         display: block;
-           
+
     }
-    
-    
-    .filtros{
+
+
+    .filtros {
         background-color: black;
         color: yellow;
     }
-    
-    .filtros span{
+
+    .filtros span {
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
 }
-@media (min-width:992px){
-    body{
+@media (min-width:992px) {
+    body {
         background-color: black;
     }
-    
-        .container {
-            display: grid;
-            grid-template-columns: 250px 1fr;
-            grid-template-rows: 80px 1fr 100px;
-            grid-template-areas:    "navegador selector"
-                                    "navegador galeria"
-                                    "footer galeria";
+
+    .container {
+        height: 150vh;
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        grid-template-rows: 80px 1fr 100px;
+        grid-template-areas: "navegador selector"
+            "navegador galeria"
+            "footer galeria";
     }
-    
-        .encabezado{
-            flex-direction: column;
-            justify-content: start;
-            color:black;
-            background-color: yellow;
-    
-        }
-    
-        .menu{
-            display: none;
-        }
-    
-        .container_cards{
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding-top: 35px;
-        }
-    
-        .encabezado ul{
-            display: block;
-            font-size: 18px;
-            font-weight: 600;
-            padding-top: 15px;
-            list-style: none;
-    
-            
-        }
-    
-        .encabezado li{
-            padding: 10px;
-        }
-    
-        .encabezado h1{
-            font-size: 26px;
-        }
-        .botones {
-            display: flex;
-            padding-top: 50px;
-        }
-    
-        .botones button{
-            width: 30px;
-            height: 30px;
-            color: black;
-            background-color: yellow;
-            border: solid 1px black;
-        }
-        .cards{
-            background-color: yellow;
-            color: black;
-        }
-        .cards span{
-            font-weight: 600;
-        }
-    .footer{
+
+    .encabezado {
+        flex-direction: column;
+        justify-content: start;
+        color: black;
         background-color: yellow;
-        color:black;
+
     }
-    
+
+    .menu {
+        display: none;
+    }
+
+    .container_cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 35px;
+    }
+
+    .encabezado ul {
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        padding-top: 15px;
+        list-style: none;
+
+
+    }
+
+    .encabezado li {
+        padding: 10px;
+    }
+
+    .encabezado h1 {
+        font-size: 26px;
+    }
+
+    .botones {
+        display: flex;
+        padding-top: 50px;
+    }
+
+    .botones button {
+        width: 30px;
+        height: 30px;
+        color: black;
+        background-color: yellow;
+        border: solid 1px black;
+    }
+
+    .cards {
+        background-color: yellow;
+        color: black;
+    }
+
+    .cards span {
+        font-weight: 600;
+    }
+
+    .footer {
+        background-color: yellow;
+        color: black;
+    }
+
     .logo3 {
         width: 40px;
         display: block;
-           
     }
-    
-    
-    .filtros{
+
+    .filtros {
         background-color: black;
         color: yellow;
     }
-    
-    .filtros span{
+    .filtros span {
         padding-top: 10px;
         padding-bottom: 10px;
     }
