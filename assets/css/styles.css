@@ -153,13 +153,13 @@ display: none;
     }
 
     .container {
-        height: 150vh;
+        height: 100vh;
         display: grid;
         grid-template-columns: 250px 1fr;
         grid-template-rows: 80px 1fr 100px;
-        grid-template-areas: "navegador selector"
-            "navegador galeria"
-            "footer footer";
+        grid-template-areas:    "navegador selector"
+                                "navegador galeria"
+                                "footer galeria";
     }
 
     .encabezado {
@@ -174,7 +174,13 @@ display: none;
         display: none;
     }
 
+    .galeria{
+        padding-top: 15px;
+    }
+
     .container_cards {
+        overflow:auto;
+        
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -263,97 +269,4 @@ display: none;
     }
 
 }
-@media (min-width:992px) {
-    body {
-        background-color: black;
-    }
 
-    .container {
-        height: 150vh;
-        display: grid;
-        grid-template-columns: 250px 1fr;
-        grid-template-rows: 80px 1fr 100px;
-        grid-template-areas: "navegador selector"
-            "navegador galeria"
-            "footer galeria";
-    }
-
-    .encabezado {
-        flex-direction: column;
-        justify-content: start;
-        color: black;
-        background-color: yellow;
-
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .container_cards {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-top: 35px;
-    }
-
-    .encabezado ul {
-        display: block;
-        font-size: 18px;
-        font-weight: 600;
-        padding-top: 15px;
-        list-style: none;
-
-
-    }
-
-    .encabezado li {
-        padding: 10px;
-    }
-
-    .encabezado h1 {
-        font-size: 26px;
-    }
-
-    .botones {
-        display: flex;
-        padding-top: 50px;
-    }
-
-    .botones button {
-        width: 30px;
-        height: 30px;
-        color: black;
-        background-color: yellow;
-        border: solid 1px black;
-    }
-
-    .cards {
-        background-color: yellow;
-        color: black;
-    }
-
-    .cards span {
-        font-weight: 600;
-    }
-
-    .footer {
-        background-color: yellow;
-        color: black;
-    }
-
-    .logo3 {
-        width: 40px;
-        display: block;
-    }
-
-    .filtros {
-        background-color: black;
-        color: yellow;
-    }
-    .filtros span {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-}
