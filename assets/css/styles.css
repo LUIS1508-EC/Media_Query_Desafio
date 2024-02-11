@@ -179,8 +179,7 @@ display: none;
     }
 
     .container_cards {
-        overflow:auto;
-        
+        overflow:auto;        
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -269,4 +268,5 @@ display: none;
     }
 
 }
+
 
